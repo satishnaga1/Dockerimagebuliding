@@ -21,6 +21,6 @@ RUN apt-get remove -y --purge make gcc build-essential &&\
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
 
-RUN chmod +x ./src/entrypoint.sh
+#RUN chmod +x ./src/entrypoint.sh
 
-CMD [ "./src/entrypoint.sh" ]
+#CMD [ "./src/entrypoint.sh" ]
