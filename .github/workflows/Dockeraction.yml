@@ -13,6 +13,10 @@ on:
         description: "Enter tag name"
         required: true
         default: " "
+      image_name:
+        description: "Enter image name"
+        required: true
+         default: " "
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,7 +37,7 @@ jobs:
 
 
       - name: push to Docker hub
-        run: docker push rajeshnimmana/dockerbuild:${{ github.event.inputs.tag_name }}
+        run: docker push rajeshnimmana/${{ github.event.inputs.image_name }}:${{ github.event.inputs.tag_name }}
         
 #      - name: Run Docker container
  #       run: docker run my-tomcat-image
