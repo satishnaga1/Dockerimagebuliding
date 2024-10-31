@@ -12,9 +12,9 @@ RUN apt-get clean && \
     build-essential libopenmpi-dev && \
     python3
 
-RUN python3 -m venv /opt/venv && \
-    /opt/venv/bin/python -m pip install pip --upgrade && \
-    /opt/venv/bin/python -m pip install -r /app/src/requirements.txt
+#RUN python3 -m venv /opt/venv && \
+ #   /opt/venv/bin/python -m pip install pip --upgrade && \
+  #  /opt/venv/bin/python -m pip install -r /app/src/requirements.txt
 
 # purge unused
 RUN apt-get remove -y --purge make gcc build-essential &&\
