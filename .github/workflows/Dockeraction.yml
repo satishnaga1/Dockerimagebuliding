@@ -16,7 +16,7 @@ on:
       image_name:
         description: "Enter image name"
         required: true
-         default: " "
+        default: " "
 jobs:
   build:
     runs-on: ubuntu-latest
